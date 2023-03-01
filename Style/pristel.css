@@ -1,0 +1,110 @@
+.carousel-caption {
+	bottom: 240px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-weight: 700;
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	margin: auto;
+	font-size: 18px;
+	line-height: 1, 9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+.w-100 {
+	height: 100vh;
+}
+
+html::-webkit-scrollbar {
+	width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+	background: white;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: skyblue;
+}
+
+.order {
+	margin-top: 80px;
+}
+.order .card .card-body:hover {
+	background-color: #0d6efd;
+	color: #ffffff;
+	cursor: pointer;
+}
+.order .card .card-body:hover img {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+.order .card .card-body .card-title {
+	font-weight: 500;
+	font-size: 20px;
+}
+.card1{
+    margin-top: 10px;
+    background-color: transparent;
+    height:300px;
+    width: 450px;
+    border: 2px solid transparent;
+    perspective: 10000px;
+    }
+    .card2{
+        
+        
+        background-color: transparent;
+        height:400px;
+        width: 550px;
+        border: 2px solid transparent;
+        perspective: 10000px;
+        }
+    .flipcard {
+        position: relative;
+        width:100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    .card1:hover .flipcard{
+     transform: rotateY(180deg);
+    }
+    .flip-front, .flip-back{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    
+    }
+    .flip-front img{
+        height: 300px;
+        width: 250px;
+    }
+
+    .flip-back{
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+        text-align:center;
+    }
+    .container1{
+        display: flex;
+        margin: auto;
+        
+    }
+    
